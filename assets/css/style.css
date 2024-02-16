@@ -1,0 +1,154 @@
+@import url("./fonts.css");
+
+/* Rest all settings */
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+    text-decoration: none;
+}
+
+/* Set Root variable */
+:root {
+	--primary-color: #219f95;
+	--secondary-color: #afcedd;
+	--font-primary-color: #1e1e1e;
+	--font--title-color: #234894;
+	--font-secondary-color: #696969;
+	--btn-font-color: #ffffff;
+}
+body,
+* {
+    font-family: Vazirmatn;
+}
+
+html {
+	font-size: 62.5%;
+
+}
+
+
+.container {
+    max-width: 1280px;
+	margin: 10rem auto;
+}
+.title {
+	color: var(--font-primary-color);
+	font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.col {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+}
+
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+
+}
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-title a :hover{
+    transform: scale(1.1);
+    color: var(--primary-color);
+    transition: all 0.3s linear;
+}
+.header-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: auto;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.header-text{
+    color: var(--font--title-color);
+    font-size: 1.6rem;
+
+}
+.header-date{
+    color: var(--font-secondary-color);
+    font-size: 1.2rem;
+}
+
+.body-head-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--font-primary-color);
+}
+.body-head-text {
+    font-size: 1.2rem;
+    color: var(--font-secondary-color);
+}
+.body-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.body-content-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--font-primary-color);
+}
+.body-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.body-items img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+.btn {
+	background-color: var(--primary-color);
+	padding: 20px 15px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--btn-font-color);
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(0.9);
+    transition: all 0.3s linear;
+}
+
+/* Set Media Query */
+
+@media screen and (min-width: 640px) {
+	.col {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.col {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
