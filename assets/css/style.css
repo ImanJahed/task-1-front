@@ -151,4 +151,10 @@ html {
 	.col {
 		grid-template-columns: repeat(3, 1fr);
 	}
+    .mx {
+        margin-right: 20px;
+    }
+
+    
+    
 }
